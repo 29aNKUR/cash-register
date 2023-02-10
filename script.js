@@ -3,8 +3,19 @@ const cashGiven = document.querySelector("#cash-given");
 const checkButton = document.querySelector("#check-button");
 const message = document.querySelector("#error-message");
 const noOfNotes = document.querySelectorAll(".no-of-notes");
-
+const nextButton = document.querySelector("#next-button");
+const section = document.querySelector(".section");
 const availableNotes = [2000,500,100,20,10,5,1];
+
+//to hide the section below next button 
+nextButton.addEventListener("click" , function hideSection(){ 
+    if(billAmount.value){
+        section.style.display='block';
+    }else{
+        alert("please enter bill amount value!");
+    }
+
+})
 
 checkButton.addEventListener("click" , function validateBillAndCashAmount() {
     hideMessage();

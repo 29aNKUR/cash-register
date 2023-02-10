@@ -1,9 +1,57 @@
 *{
+    margin-top:2rem;
+}
 
+:root{
+    --primary-color:darkcyan;
+    --font-color:white;
+}
+
+h1{
+    text-align:center;
+}
+
+p{
+    text-align:center;
 }
 
 .container{
-    display:flex;
-    flex-direction: column;
-    width:50vw;
+    padding:0.5rem;
+    display:block;
+    margin:auto;
+    width:50%;
+    background-color: var(--primary-color);
+    color:var(--font-color);
 }
+
+label,input{
+    display:block;
+    width:90%;
+    margin:1rem;
+    margin-bottom:0.5rem;
+}
+/* 
+input{
+    margin:1rem;
+} */
+caption{
+    font-size:large;
+}
+
+button{
+    padding:1rem;
+    display:block;
+    margin:auto;
+    border-width:medium;
+    border-radius:0.5rem;
+    width:20%;
+    margin-bottom:1rem;
+    margin-top:1rem;
+}
+
+.change-table{
+   /* display:inline-block; */
+   width:100%;
+}
+
+
